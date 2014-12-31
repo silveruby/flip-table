@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Flip The Table!</title>
+	<meta name="author" content="Ruby Zheng">
+	<!-- Date: 2012-07-12 -->
+	
+	<!-- LE STYLES -->
+	<link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	<link href="./flipTable.css" rel="stylesheet" type="text/css">
+		
+	<!-- LE SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="../../js/underscore-min.js"></script>		
+	<script src="../../js/backbone-min.js"></script>	
+	<script src="../../js/jquery.fittext.js"></script>			
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid" id="header">
+			<div class="span12">
+				<h1 id="headerText">Flip The Table!</h1>
+			</div>
+		</div>		
+		<div class="row-fluid" id="flipContent">
+			<div class="span12">
+				<h1 id="flipText">
+					<span id="face"></span>				
+					<span id="table_front"></span>
+					<span id="table_text"></span>
+					<input type="text" name="words"></input>
+					<span id="table_end"></span>	
+				</h1>
+				<button type="button" name="flipBtn">Flip The Table!</button>
+			</div>					
+		</div>
+		<div class="row-fluid" id="footer">
+			<div class="span1">&nbsp;</div>			
+			<div class="span5 p20">
+				<h2>About</h2>
+				<p>Are you unhappy about something or someone? Does thinking about it boils you up and you need a way to express all that built up energy? Look no further, this is the place where you can get angry, so angry enough to flip a table with the object or person of your rage on it! Yes! Finally, all problems can be solved with just flipping the table and we can soon hope for world peace.</p>
+				<p>For more information, read <a href="http://knowyourmeme.com/memes/flipping-tables-%E2%95%AF%E2%96%A1%EF%BC%89%E2%95%AF%EF%B8%B5-%E2%94%BB%E2%94%81%E2%94%BB">Flipping Table Meme</a></p>
+				<p>
+					(づ◕‿◕｡)づ - Questions? <a href="mailto:zhengsan@gmail.com">Contact Me</a>.
+				</p>
+			</div>	
+			<div class="span2 p20">
+				<h2>Tools Used</h2>
+				<ul>
+					<li><a href="http://backbonejs.org/">Backbone.js</a></li>
+					<li><a href="http://twitter.github.com/bootstrap/index.html">Twitter Bootstrap</a></li>
+					<li><a href="http://fittextjs.com/">FitText.js</a></li>	
+					<li><a href="http://www.cssbuttongenerator.com/">CSS Button Generator</a></li>									
+				</ul>
+			</div>
+			<div class="span2 p20">
+				<!-- <h2>Share</h2>
+
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/TDOcMT" data-text="Flip The Table!" data-via="silveruby">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+			</div>			
+			<div class="span1">&nbsp;</div>					
+		</div>			
+	</div> <!-- END CONTAINER -->	
+	
+	<!-- LE SCRIPTS -->	
+	<script src="./flipTable.js"></script>
+	<script>
+		$("#flipText").fitText(3.0);
+	</script>	
+</body>
+</html>
