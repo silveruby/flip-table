@@ -1,5 +1,5 @@
 body, .container-fluid{	
-	background: #CCC url('../../img/frenchstucco.png') repeat;			
+	background: #CCC url('./img/frenchstucco.png') repeat;			
 	padding: 0;
 }
 .span12{
@@ -57,7 +57,7 @@ h1{
 }
 
 #header{
-	background: #333 url('../../img/debut_dark.png') repeat;	
+	background: #333 url('./img/debut_dark.png') repeat;	
 	color: #FFF;
 	padding: 30px 0;
 }
